@@ -5,7 +5,7 @@
     ng serve - Esperar carga
     
 ## Ruta principal
-  localhost:4200 || localhost:YOURPORTNUMBERSELECTED
+  localhost:4200/home || localhost:YOURPORTNUMBERSELECTED/home
 
 ## Pasos de Navegación
 Al iniciar el proyecto en HOME dar clic boton iniciar sesión para ingresar y ver la lista de la vista 3; propuesta por el Diseñador.
