@@ -13,19 +13,38 @@
       <p>¿Aún no tienes cuenta?</p>
       <a href="">Registrate ahora</a>
     </div>
-    <form class="box">
+    <form class="box" [formGroup]="formLogin">
       <h1>Iniciar sesión en Coink</h1>
 
       <div>
-
         <label for="correo">Correo Electrónico</label>
-        <input type="text" placeholder="Correo electrónico">
+        <input type="text" placeholder="Correo electrónico" formControlName="email">
+        <section *ngIf="formLogin.get('email')?.errors && (formLogin.get('email')?.dirty || formLogin.get('email')?.touched)">
+          <small severity="error" *ngIf="formLogin.get('email')?.hasError('required')">
+            Correo electrónico es requerido.
+          </small>
+          <small *ngIf="formLogin.get('email')?.hasError('minlength')">
+            El correo electrónico debe tener al menos 20 caracteres.
+          </small>
+          <small *ngIf="formLogin.get('email')?.hasError('pattern')">
+            Formato de correo electrónico incorrecto
+          </small>
+        </section>
       </div>
-
       <div>
-
         <label for="correo">Contraseña</label>
-        <input type="text" placeholder="Contraseña">
+        <input type="text" placeholder="Contraseña" formControlName="password">
+        <section *ngIf="formLogin.get('password')?.errors && (formLogin.get('password')?.dirty || formLogin.get('password')?.touched)">
+          <small severity="error" *ngIf="formLogin.get('password')?.hasError('required')">
+            Contraseña es requerida.
+          </small>
+          <small *ngIf="formLogin.get('password')?.hasError('minlength')">
+            La contraseña debe tener al menos 20 caracteres.
+          </small>
+          <small *ngIf="formLogin.get('password')?.hasError('pattern')">
+            Por favor digita solo letras, numeros y # . -.
+          </small>
+        </section>
       </div>
 
       <a class="button" (click)="goDashboard()">Iniciar sesión</a>
