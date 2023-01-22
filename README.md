@@ -1,6 +1,6 @@
 # Prueba Coink - Rick and Morty Application
 
-## Comando de inicio de proyecto
+## Comandos de inicio de proyecto
     npm install - Esperar instalación
     ng serve - Esperar carga
     
