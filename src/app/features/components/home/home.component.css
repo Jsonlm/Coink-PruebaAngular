@@ -1,34 +1,10 @@
+a {
+  color: #212121;
+  text-decoration: none;
+}
+
 div section form {
   display: block;
-}
-
-.button {
-  background-color: #d3d3d3;
-  border: 0px;
-  border-radius: 30px;
-  box-shadow: 0 0 10px 0 #d3d3d3;
-  color: #ffffff;
-  display: flex;
-  font-size: larger;
-  justify-content: center;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  width: 200px;
-}
-
-
-.button:hover {
-  background-color: #001b24;
-  border: 0px;
-  border-radius: 30px;
-  box-shadow: 0 0 10px 0 #d3d3d3;
-  cursor: pointer;
-  color: #ffffff;
-  font-size: larger;
-  margin: auto;
-  padding: 10px;
-  width: 200px;
 }
 
 div section form div {
@@ -60,6 +36,34 @@ section form h1 {
   margin-top: 30%;
 }
 
+.button {
+  background-color: #d3d3d3;
+  border: 0px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px 0 #d3d3d3;
+  color: #ffffff;
+  display: flex;
+  font-size: larger;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 200px;
+}
+
+.button:hover {
+  background-color: #001b24;
+  border: 0px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px 0 #d3d3d3;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: larger;
+  margin: auto;
+  padding: 10px;
+  width: 200px;
+}
+
 .login-form {
   position: absolute;
   right: 0%;
@@ -79,11 +83,6 @@ section form h1 {
 
 .register:nth-child(1){
   display: flex;
-}
-
-a {
-  color: #212121;
-  text-decoration: none;
 }
 
 .sidebar {
