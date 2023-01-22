@@ -24,10 +24,14 @@ Al iniciar el proyecto en HOME dar clic boton iniciar sesión para ingresar y ve
   
   >  TypeScript
   
-## Frameworks
+## Frameworks y herramientas
   >  Angular v13.1.2
 
   >  Iconos con css.gg
+
+  >  Node v14.8.1
+  
+  >  npm v6.14.15
 
 ## Imágenes
   >  Login - Tomadas de su interfaz de usuario
