@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, Subject, throwError } from 'rxjs';
 import { Characters } from '../models/characters';
 import { environment } from 'src/environments/environment';
-import { catchError, tap } from 'rxjs/operators';
+import { catchError} from 'rxjs/operators';
 
 const ENV_URL = environment;
 
@@ -39,9 +39,6 @@ export class CharactersService {
     let filter = `?page=${pg}&name=${name}&type=${type}`;
 
     return this.http.get<Characters[]>(`${ENV_URL.URL}` + filter).pipe(
-      tap(() => {
-        this._refresh$.next();
-      }),
       catchError(
         err => throwError(
           () => new Error('Service Error')
