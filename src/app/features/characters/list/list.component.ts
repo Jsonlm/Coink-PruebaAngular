@@ -35,11 +35,10 @@ export class ListComponent implements OnInit {
       Validators.maxLength(50)
     ]),
   })
+  public dataCharacters: Characters | undefined;
 
-
-  public dataCharacters: Characters[] = [];
-  public characters: any[] = [];
-  constructor(private charactersService: CharactersService) {
+  constructor(
+    private charactersService: CharactersService,) {
   }
 
   ngOnInit(): void {
@@ -63,15 +62,15 @@ export class ListComponent implements OnInit {
       name,       //name filter
       type        //type filter
     )
-      .subscribe((data: any) => {
-        this.dataCharacters = data.results;
+      .subscribe((data: Characters) => {
+        this.dataCharacters = data;
       });
   }
 
   clearFilter() {
-    this.getCharacters(1,"","");
+    this.getCharacters(1, "", "");
 
-    this.formRyM.setValue({name: '', type: ''});
+    this.formRyM.setValue({ name: '', type: '' });
   }
 
   applyFilter() {

@@ -23,7 +23,7 @@ export class CharactersService {
     page: number,
     name: string,
     type: string
-  ): Observable<Characters[]> {
+  ): Observable<Characters> {
 
     if (type === undefined || null || "") {
       type = "";
@@ -38,7 +38,7 @@ export class CharactersService {
     let pg = page.toString();
     let filter = `?page=${pg}&name=${name}&type=${type}`;
 
-    return this.http.get<Characters[]>(`${ENV_URL.URL}` + filter).pipe(
+    return this.http.get<Characters>(`${ENV_URL.URL}` + filter).pipe(
       catchError(
         err => throwError(
           () => new Error('Service Error')
