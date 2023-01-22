@@ -20,7 +20,9 @@ Al iniciar el proyecto en HOME dar clic boton iniciar sesión para ingresar y ve
 
   >  CSS
 
-  >  Javascript
+  >  JavaScript
+  
+  >  TypeScript
   
 ## Frameworks
   >  Angular v13.1.2
