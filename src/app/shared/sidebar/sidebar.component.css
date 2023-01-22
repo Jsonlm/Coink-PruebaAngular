@@ -1,21 +1,21 @@
 .sidebar {
-  position: absolute;
-  justify-content: left;
   background-color: #ffffff;
-  width: 300px;
-  height: 110%;
-  z-index: 2;
   border-right: 2px solid rgb(231, 231, 231);
+  height: 110%;
+  justify-content: left;
+  position: absolute;
+  width: 300px;
+  z-index: 2;
 }
 
 .user-section {
-  height: 200px;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 30px;
   border: 1px;
   border-bottom: 2px solid rgb(231, 231, 231);
+  height: 200px;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 h2 {
@@ -39,6 +39,7 @@ section div li {
   padding: 15px;
   width: 90%;
 }
+
 section ul li {
   background-color: white;
   color: #004b40;;

@@ -34,7 +34,8 @@ export class ListComponent implements OnInit {
       Validators.minLength(3),
       Validators.maxLength(50)
     ]),
-  })
+  });
+
   public dataCharacters: Characters | undefined;
 
   constructor(
