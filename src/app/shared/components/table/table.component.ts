@@ -10,13 +10,14 @@ export class TableComponent implements OnInit {
 
   @Input() titles: string[] | undefined;
 
-  @Input() items: any[] = [];
+  @Input() items: Characters | undefined;
+
+  private data: Characters | undefined;;
 
   constructor() {
   }
 
   ngOnInit(): void {
-
   }
 
 }

@@ -2,11 +2,11 @@
 
   <table>
     <tr>
-      <th *ngFor="let title of titles"  class="header">
+      <th *ngFor="let title of titles" class="header">
         {{title}}
       </th>
     </tr>
-    <tr *ngFor="let item of items" class="items">
+    <tr *ngFor="let item of items?.results" class="items">
       <td>
         {{item.id}}
       </td>

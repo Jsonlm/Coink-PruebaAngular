@@ -23,7 +23,7 @@
   <app-table [items]="dataCharacters" [titles]="titles"></app-table>
 
   <div class="main-paginator">
-    <div>Mostrando {{page*20}} Resultados</div>
+    <div>Mostrando {{page*20}} Resultados de {{dataCharacters?.info?.count}}</div>
 
     <div class="paginator gg-chevron-left" (click)="prev()"></div>
     <div class="paginator actual">{{page}}</div>
