@@ -1,13 +1,20 @@
 # Prueba Coink - Rick and Morty Application
 
 ## Comando de inicio de proyecto
-  ng serve - Esperar carga
-## Ruta primcipal
+    npm install - Esperar instalación
+    ng serve - Esperar carga
+    
+## Ruta principal
   localhost:4200 || localhost:YOURPORTNUMBERSELECTED
 
 ## Pasos de Navegación
 Al iniciar el proyecto en HOME dar clic boton iniciar sesión para ingresar y ver la lista de la vista 3; propuesta por el Diseñador.
 
+## Rutas
+  >  localhost:PORTNUMBER/home
+
+  >  localhost:PORTNUMBER/characters/list
+  
 ## Tecnologías usadas
   >  HTML
 
@@ -27,10 +34,4 @@ Al iniciar el proyecto en HOME dar clic boton iniciar sesión para ingresar y ve
 
 ## API
   >  Tomada de __`RickAndMortyApi`__
-  
-## Rutas
-  >  localhost:PORTNUMBER/home
-
-  >  localhost:PORTNUMBER/characters/list
-  
   
