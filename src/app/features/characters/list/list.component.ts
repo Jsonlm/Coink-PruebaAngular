@@ -53,12 +53,12 @@ export class ListComponent implements OnInit {
     );
   }
 
-  async getCharacters(page: number, name: string, type: string) {
+  getCharacters(page: number, name: string, type: string) {
     let pageDefault = 1;
 
     this.page === 0 || this.page === 1 ? this.page = pageDefault : this.page;
 
-    await this.charactersService.getCharacters(
+    this.charactersService.getCharacters(
       this.page,  //Page
       name,       //name filter
       type        //type filter

@@ -1,15 +1,19 @@
-.btn-filter {
+div form div button {
   border-radius: 5px;
 }
 
-.btn-filter:nth-child(n + 2) {
+div form div button:nth-child(n + 2) {
   background-color: #004b40;
   color: #f2f2f2;
 }
 
-.btn-filter:nth-child(1) {
+div form div button:nth-child(1) {
   background-color: #f2f2f2;
   color: #004b40;
+}
+
+div form div button:nth-child(n + 3) {
+  display: none;
 }
 
 .container {
