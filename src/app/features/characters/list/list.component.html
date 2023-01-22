@@ -27,7 +27,7 @@
 
     <div class="paginator gg-chevron-left" (click)="prev()"></div>
     <div class="paginator actual">{{page}}</div>
-    <div class="paginator gg-chevron-right" (click)="next()"></div>
+    <div class="paginator gg-chevron-right" (click)="next()" *ngIf="page !== dataCharacters?.info?.pages"></div>
 
   </div>
 </div>
