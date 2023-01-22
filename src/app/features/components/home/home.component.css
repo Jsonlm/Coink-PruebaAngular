@@ -69,6 +69,23 @@ section form h1 {
   color: #212121;
 }
 
+.register {
+  width: 300px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+.register:nth-child(1){
+  display: flex;
+}
+
+a {
+  color: #212121;
+  text-decoration: none;
+}
+
 .sidebar {
   justify-content: center;
   position: absolute;
