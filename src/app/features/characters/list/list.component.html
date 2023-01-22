@@ -1,0 +1,32 @@
+<div class="container">
+  <div>
+    <form [formGroup]="formRyM" class="form-filter">
+      <div>
+        <label for="name">Buscar por nombre</label>
+        <input id="name" type="text" formControlName="name" autocomplete="off">
+      </div>
+
+      <div>
+        <label for="type">Buscar por tipo</label>
+        <input id="type" type="text" formControlName="type" autocomplete="off">
+      </div>
+
+      <div>
+        <button class="btn-filter" (click)="clearFilter()">Limpiar filtros</button>
+        <button class="btn-filter" (click)="applyFilter()">Buscar</button>
+      </div>
+    </form>
+  </div>
+
+
+  <app-table [items]="dataCharacters" [titles]="titles"></app-table>
+
+  <div class="main-paginator">
+    <div>Mostrando {{page*20}} Resultados</div>
+
+    <div class="paginator gg-chevron-left" (click)="prev()"></div>
+    <div class="paginator actual">{{page}}</div>
+    <div class="paginator gg-chevron-right" (click)="next()"></div>
+
+  </div>
+</div>

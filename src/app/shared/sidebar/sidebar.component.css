@@ -1,0 +1,51 @@
+.sidebar {
+  position: absolute;
+  justify-content: left;
+  background-color: #ffffff;
+  width: 300px;
+  height: 110%;
+  z-index: 2;
+  border-right: 2px solid rgb(231, 231, 231);
+}
+
+.user-section {
+  height: 200px;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 1px;
+  border-bottom: 2px solid rgb(231, 231, 231);
+}
+
+h2 {
+  color: #004b40;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+section img {
+  border-radius: 50px;
+  box-shadow: 0 0 10px 0 #d3d3d3;
+  height: 50%;
+  margin-top: 30px;
+}
+
+section div li {
+  background-color: #004b40;
+  color: #ffffff;
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 15px;
+  width: 90%;
+}
+section ul li {
+  background-color: white;
+  color: #004b40;;
+  margin-bottom: 5px;
+  width: 88%;
+}
+
+li i {
+  float: right;
+}

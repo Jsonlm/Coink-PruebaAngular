@@ -1,0 +1,19 @@
+<aside class="sidebar" *ngIf="show">
+  <section class="user-section">
+    <img src="../../../assets/logo-defaul-user.png" alt="">
+    <h2>Username</h2>
+  </section>
+
+  <section class="menu-section">
+    <div *ngFor="let option of menu; let i = index">
+      <li >{{option.name}}<i class="gg-chevron-down"></i>
+      </li>
+      <ul *ngFor="let submenu of menu[i].options">
+        <li>
+          {{submenu.name}}
+
+        </li>
+      </ul>
+    </div>
+  </section>
+</aside>
