@@ -1,4 +1,4 @@
-# Prueba Coink - Rick and Morty Application
+# Prueba Coink - Angular, Rick and Morty API
 
 ## Comandos de inicio de proyecto
     npm install - Esperar instalación
