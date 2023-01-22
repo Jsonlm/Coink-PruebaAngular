@@ -26,7 +26,7 @@ Al iniciar el proyecto en HOME dar clic boton iniciar sesión para ingresar y ve
   >  Logo realizado en Photoshop con sus imágenes de la web
 
 ## API
-  >  Tomada de `**RickAndMortyApi**`
+  >  Tomada de __`RickAndMortyApi`__
   
 ## Rutas
   >  localhost:PORTNUMBER/home
